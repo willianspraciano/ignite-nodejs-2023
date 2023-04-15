@@ -1,6 +1,6 @@
 import fastify from 'fastify';
-import { request } from 'https';
 import { ZodError } from 'zod';
+
 import { env } from './env';
 import { appRoutes } from './http/routes';
 
