@@ -1,7 +1,4 @@
-import { hash } from 'bcryptjs';
-
 import { GymsRepository } from '@/repositories/gyms-repository';
-import { UserAlreadyExistsError } from './errors/user-already-exists-error';
 import { Gym } from '@prisma/client';
 
 interface IRequest {
