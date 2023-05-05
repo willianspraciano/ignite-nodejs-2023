@@ -1,5 +1,7 @@
-export class ResourceNotFoundError extends Error {
+import { AppError } from '@/errors/AppError';
+
+export class ResourceNotFoundError extends AppError {
   constructor() {
-    super('Resource not found.');
+    super('Resource not found.', 404);
   }
 }

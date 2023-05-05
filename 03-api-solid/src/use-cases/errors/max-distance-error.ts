@@ -1,5 +1,7 @@
-export class MaxDistanceError extends Error {
+import { AppError } from '@/errors/AppError';
+
+export class MaxDistanceError extends AppError {
   constructor() {
-    super('Max distance reached.');
+    super('Max distance reached.', 403);
   }
 }

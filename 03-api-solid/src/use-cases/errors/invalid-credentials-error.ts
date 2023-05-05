@@ -1,5 +1,7 @@
-export class InvalidCredentialsError extends Error {
+import { AppError } from '@/errors/AppError';
+
+export class InvalidCredentialsError extends AppError {
   constructor() {
-    super('Invalid credentials.');
+    super('Invalid credentials.', 400);
   }
 }
